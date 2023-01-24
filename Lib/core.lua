@@ -96,6 +96,7 @@ Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local uitoggled = false
 UserInputService.InputBegan:Connect(
 	function(io, p)
+		if p then return nil end
 		if io.KeyCode == Enum.KeyCode.V then
 			if uitoggled == false then
 				Library.Enabled = false
@@ -448,7 +449,7 @@ function VLib:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(37, 39, 44)}
+						{BackgroundColor3 = Color3.fromRGB(0, 255, 0)}
 					):Play()
 				end
 			)
