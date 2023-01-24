@@ -449,7 +449,7 @@ function VLib:Window(textgame)
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{BackgroundColor3 = Color3.fromRGB(0, 255, 0)}
+						{BackgroundColor3 = Color3.fromRGB(37,39,44)}
 					):Play()
 				end
 			)
@@ -498,7 +498,7 @@ function VLib:Window(textgame)
 			coroutine.wrap(
 				function()
 					while wait() do
-						ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(66,69,73)
+						ToggleFrameRainbow.BackgroundColor3 = Color3.fromRGB(0,255,0)
 					end
 				end
 			)()
