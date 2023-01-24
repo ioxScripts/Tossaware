@@ -1338,6 +1338,7 @@ function VLib:Window(textgame)
 			Label.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Label.TextSize = 14.000
 			Label.Text = text
+			Label.TextXAlignment = Enum.TextXAlignment.Left
 
 			LabelCorner.CornerRadius = UDim.new(0, 6)
 			LabelCorner.Name = "LabelCorner"
